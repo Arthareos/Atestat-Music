@@ -96,6 +96,40 @@ div#nav p1 {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+p.cont-play {
+    font-family: text;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+p.cont-auth {
+    font-family: text;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+li.main-cont {
+    list-style-type: none;
+    padding: 10px
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    margin-right: 82px;
+}
+
 #main {
     height: 100%;
     width: 100%;
@@ -103,6 +137,7 @@ div#nav p1 {
     position: fixed;
     box-shadow: -2px 0px 12px 1px rgba(0,0,0,0.6);
     padding-left: 82px;
+    padding-right: 82px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
