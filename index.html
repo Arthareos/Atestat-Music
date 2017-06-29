@@ -1,265 +1,99 @@
 <!DOCTYPE html>
     <head>
         <title>Home</title>
-        <style>
-            @font-face {
-    font-family: title;
-    src: url("./Fonts/titles.ttf");
-}
-
-@font-face {
-    font-family: text;
-    src: url("./Fonts/text.ttf");
-}
-
-@font-face {
-    font-family: subtext;
-    src: url("./Fonts/subtext.otf");
-}
-
-h1 {
-    font-family: title;
-    color: white;
-    font-size: 32px;
-    margin: 0px;
-}
-
-p {
-    font-family: text;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 20px;
-}
-
-p1 {
-    font-family: text;
-    color: white;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-div#nav div.nav-head {
-    width: 160px;
-    height: 1px;
-    margin-top: 75px;
-    margin-bottom: 20px;
-    background-color: white;
-}
-
-div#nav div.nav {
-    width: 160px;
-    height: 1px;
-    margin-top: 20px;
-    background-color: white;
-}
-
-#nav-imp {
-    font-family: title;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 20px;
-}
-
-div#nav a.nav-link-imp {
-    font-family: title;
-    color: white;
-    margin-top: 20px;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-div#nav p1 {
-    font-family: text;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 20px;
-}
-
-div#nav p1 {
-    font-family: text;
-    color: white;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-
-#nav {
-    height: 100%;
-    width: 0px;
-    background-color: black;
-    opacity: 0.5;
-    overflow-x: hidden;
-    float: left;
-    z-index: -1;
-    position: fixed;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-p.cont-play {
-    font-family: text;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 20px;
-    text-align: center;
-}
-
-p.cont-auth {
-    font-family: text;
-    color: white;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-align: center;
-}
-
-li.main-cont {
-    list-style-type: none;
-    padding: 10px
-}
-
-#top {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    padding: 0px;
-    margin-right: 82px;
-}
-
-#main {
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    position: fixed;
-    box-shadow: -2px 0px 12px 1px rgba(0,0,0,0.6);
-    padding-left: 82px;
-    padding-right: 82px;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-#icon {
-    margin-top: 21.5px;
-    margin-left: 25px;
-    margin-right: 25px;    
-    z-index: 99;
-    position: fixed;
-}
-
-body {
-    z-index: 1;
-    margin: 0px;
-    background-image: linear-gradient(rgb(108, 53, 45), rgb(10, 5, 4) 85%);
-    background-repeat: no-repeat;
-}
-
-html {
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    overflow-y: scroll;
-}
-        </style>
+        <link rel="stylesheet" type="text/css" href="./Style/index.css">
     </head>
     <div style="width: 100%; height: 75px; background-color: #ccbb00; z-index: 99;">
-        <h1 style="color: black;text-align: center;padding-top: 16px;font-family: title;font-size: 32px;margin: 0px;">&#9888 WIP Project, very early in developement!</h1>
+        <h1 style="color: black; text-align: center; padding-top: 16px;">&#9888 WIP Project, very early in developement!</h1>
     </div>
-    <body style="z-index: 1;margin: 0px;background-image: linear-gradient(rgb(108, 53, 45), rgb(10, 5, 4) 85%);background-repeat: no-repeat;">
-        <a id="icon" href="#" onclick="openNav()" style="margin-top: 21.5px;margin-left: 25px;margin-right: 25px;z-index: 99;position: fixed;"><img src="./Style/Images/logo.png" height="32" width="32"></a>
-        <div id="nav" style="height: 100%;width: 0px;background-color: black;opacity: 0.5;overflow-x: hidden;float: left;z-index: -1;position: fixed;">
-            <div class="nav-head" style="width: 160px;height: 1px;margin-top: 75px;margin-bottom: 20px;background-color: white;"></div>
-            <a href="index.html" class="nav-link-imp" style="font-family: title;color: white;margin-top: 20px;font-size: 20px;text-decoration: none;">Home</a>
-            <div class="nav" style="width: 160px;height: 1px;margin-top: 20px;background-color: white;"></div>
-            <p id="nav-imp" style="font-family: title;color: white;margin-top: 20px;margin-bottom: 0px;font-size: 20px;">Playlists</p>
-            <p style="font-family: text;color: white;margin-top: 20px;margin-bottom: 0px;font-size: 20px;">Text</p>
-            <p1 style="font-family: text;color: white;font-size: 15px;margin-bottom: 10px;margin-top: 10px;">Subtext</p1>
-            <p style="font-family: text;color: white;margin-top: 20px;margin-bottom: 0px;font-size: 20px;">Text</p>
-            <p1 style="font-family: text;color: white;font-size: 15px;margin-bottom: 10px;margin-top: 10px;">Subtext</p1>
+    <body>
+        <a id="icon" href="#" onclick="openNav()"><img src="./Style/Images/logo.png" height="32" width="32"></a>
+        <div id="nav">
+            <div class="nav-head"></div>
+            <a href="index.html" class="nav-link-imp">Home</a>
+            <div class="nav"></div>
+            <p id="nav-imp">Playlists</p>
+            <p>Text</p>
+            <p1 >Subtext</p1>
+            <p>Text</p>
+            <p1>Subtext</p1>
         </div>
-        <div id="main" style="height: 100%;width: 100%;z-index: 2;position: fixed;box-shadow: -2px 0px 12px 1px rgba(0,0,0,0.6);padding-left: 82px;padding-right: 82px;">
+        <div id="main">
             <div id="header">
-                <h1 style="margin-top: 20px;font-family: title;color: white;font-size: 32px;margin: 0px;">Welcome Back!</h1>
+                <h1 style="margin-top: 20px;">Welcome Back!</h1>
             </div>
             <div id="content">
                 <div id="top-wrapper">
-                    <h1 style="margin-top: 100px;font-size: 55px;font-family: title;color: white;margin: 0px;">Your Top Playlists</h1>
-                    <ul id="top" onload="" style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;align-content: flex-start;padding: 0px;margin-right: 82px;">
-                        <li class="main-cont" style="list-style-type: none;padding: 10px;">
+                    <h1 style="margin-top: 100px; font-size: 55px;">Your Top Playlists</h1>
+                    <ul id="top" onload="">
+                        <li class="main-cont">
                             <div id="top-1">
                                 <img src="./Style/Images/album.png">
-                                <p id="cont-play-1" class="cont-play" style="font-family: text;color: white;margin-top: 10px;margin-bottom: 0px;font-size: 20px;text-align: center;">Playlist Name</p>
-                                <p id="cont-auth-1" class="cont-auth" style="font-family: text;color: white;margin-top: 0px;margin-bottom: 10px;font-size: 20px;text-align: center;">Author</p>
+                                <p id="cont-play-1" class="cont-play">Playlist Name</p>
+                                <p id="cont-auth-1" class="cont-auth">Author</p>
                             </div>
                         </li>
-                        <li class="main-cont" style="list-style-type: none;padding: 10px;">
+                        <li class="main-cont">
                             <div id="top-2">
                                 <img src="./Style/Images/album.png">
-                                <p id="cont-play-2" class="cont-play" style="font-family: text;color: white;margin-top: 10px;margin-bottom: 0px;font-size: 20px;text-align: center;">Playlist Name</p>
-                                <p id="cont-auth-2" class="cont-auth" style="font-family: text;color: white;margin-top: 0px;margin-bottom: 10px;font-size: 20px;text-align: center;">Author</p>
+                                <p id="cont-play-2" class="cont-play">Playlist Name</p>
+                                <p id="cont-auth-2" class="cont-auth">Author</p>
                             </div>
                         </li>
-                        <li class="main-cont" style="list-style-type: none;padding: 10px;">
+                        <li class="main-cont">
                             <div id="top-3">
                                 <img src="./Style/Images/album.png">
-                                <p id="cont-play-3" class="cont-play" style="font-family: text;color: white;margin-top: 10px;margin-bottom: 0px;font-size: 20px;text-align: center;">Playlist Name</p>
-                                <p id="cont-auth-3" class="cont-auth" style="font-family: text;color: white;margin-top: 0px;margin-bottom: 10px;font-size: 20px;text-align: center;">Author</p>
+                                <p id="cont-play-3" class="cont-play">Playlist Name</p>
+                                <p id="cont-auth-3" class="cont-auth">Author</p>
                             </div>
                         </li>
-                        <li class="main-cont" style="list-style-type: none;padding: 10px;">
+                        <li class="main-cont">
                             <div id="top-4">
                                 <img src="./Style/Images/album.png">
-                                <p id="cont-play-4" class="cont-play" style="font-family: text;color: white;margin-top: 10px;margin-bottom: 0px;font-size: 20px;text-align: center;">Playlist Name</p>
-                                <p id="cont-auth-4" class="cont-auth" style="font-family: text;color: white;margin-top: 0px;margin-bottom: 10px;font-size: 20px;text-align: center;">Author</p>
+                                <p id="cont-play-4" class="cont-play">Playlist Name</p>
+                                <p id="cont-auth-4" class="cont-auth">Author</p>
                             </div>
                         </li>
-                        <li class="main-cont" style="list-style-type: none;padding: 10px;">
+                        <li class="main-cont">
                             <div id="top-5">
                                 <img src="./Style/Images/album.png">
-                                <p id="cont-play-5" class="cont-play" style="font-family: text;color: white;margin-top: 10px;margin-bottom: 0px;font-size: 20px;text-align: center;">Playlist Name</p>
-                                <p id="cont-auth-5" class="cont-auth" style="font-family: text;color: white;margin-top: 0px;margin-bottom: 10px;font-size: 20px;text-align: center;">Author</p>
+                                <p id="cont-play-5" class="cont-play">Playlist Name</p>
+                                <p id="cont-auth-5" class="cont-auth">Author</p>
                             </div>
                         </li>
-                        <li class="main-cont" style="list-style-type: none;padding: 10px;">
+                        <li class="main-cont">
                             <div id="top-6">
                                 <img src="./Style/Images/album.png">
-                                <p id="cont-play-6" class="cont-play" style="font-family: text;color: white;margin-top: 10px;margin-bottom: 0px;font-size: 20px;text-align: center;">Playlist Name</p>
-                                <p id="cont-auth-6" class="cont-auth" style="font-family: text;color: white;margin-top: 0px;margin-bottom: 10px;font-size: 20px;text-align: center;">Author</p>
+                                <p id="cont-play-6" class="cont-play">Playlist Name</p>
+                                <p id="cont-auth-6" class="cont-auth">Author</p>
                             </div>
                         </li>
-                        <li class="main-cont" style="list-style-type: none;padding: 10px;">
+                        <li class="main-cont">
                             <div id="top-7">
                                 <img src="./Style/Images/album.png">
-                                <p id="cont-play-7" class="cont-play" style="font-family: text;color: white;margin-top: 10px;margin-bottom: 0px;font-size: 20px;text-align: center;">Playlist Name</p>
-                                <p id="cont-auth-7" class="cont-auth" style="font-family: text;color: white;margin-top: 0px;margin-bottom: 10px;font-size: 20px;text-align: center;">Author</p>
+                                <p id="cont-play-7" class="cont-play">Playlist Name</p>
+                                <p id="cont-auth-7" class="cont-auth">Author</p>
                             </div>
                         </li>
-                        <li class="main-cont" style="list-style-type: none;padding: 10px;">
+                        <li class="main-cont">
                             <div id="top-8">
                                 <img src="./Style/Images/album.png">
-                                <p id="cont-play-8" class="cont-play" style="font-family: text;color: white;margin-top: 10px;margin-bottom: 0px;font-size: 20px;text-align: center;">Playlist Name</p>
-                                <p id="cont-auth-8" class="cont-auth" style="font-family: text;color: white;margin-top: 0px;margin-bottom: 10px;font-size: 20px;text-align: center;">Author</p>
+                                <p id="cont-play-8" class="cont-play">Playlist Name</p>
+                                <p id="cont-auth-8" class="cont-auth">Author</p>
                             </div>
                         </li>
-                        <li class="main-cont" style="list-style-type: none;padding: 10px;">
+                        <li class="main-cont">
                             <div id="top-9">
                                 <img src="./Style/Images/album.png">
-                                <p id="cont-play-9" class="cont-play" style="font-family: text;color: white;margin-top: 10px;margin-bottom: 0px;font-size: 20px;text-align: center;">Playlist Name</p>
-                                <p id="cont-auth-9" class="cont-auth" style="font-family: text;color: white;margin-top: 0px;margin-bottom: 10px;font-size: 20px;text-align: center;">Author</p>
+                                <p id="cont-play-9" class="cont-play">Playlist Name</p>
+                                <p id="cont-auth-9" class="cont-auth">Author</p>
                             </div>
                         </li>
-                        <li class="main-cont" style="list-style-type: none;padding: 10px;">
+                        <li class="main-cont">
                             <div id="top-10">
                                 <img src="./Style/Images/album.png">
-                                <p id="cont-play-10" class="cont-play" style="font-family: text;color: white;margin-top: 10px;margin-bottom: 0px;font-size: 20px;text-align: center;">Playlist Name</p>
-                                <p id="cont-auth-10" class="cont-auth" style="font-family: text;color: white;margin-top: 0px;margin-bottom: 10px;font-size: 20px;text-align: center;">Author</p>
+                                <p id="cont-play-10" class="cont-play">Playlist Name</p>
+                                <p id="cont-auth-10" class="cont-auth">Author</p>
                             </div>
                         </li>
                     </ul>
@@ -332,3 +166,4 @@ html {
             }
         </script>    
     </body>
+</html>
